@@ -28,15 +28,6 @@ jobs:
           ruby-version: '3.3'
           bundler-cache: true
 
-      - name: Enable GitHub Pages
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          if ! gh api "repos/${GITHUB_REPOSITORY}/pages" > /dev/null 2>&1; then
-            gh api --method POST "repos/${GITHUB_REPOSITORY}/pages" \
-              -f source_branch=master -f source_path=/
-          fi
-
       - name: Build site
         run: bundle exec jekyll build --baseurl "/LJT-Homepage"
 

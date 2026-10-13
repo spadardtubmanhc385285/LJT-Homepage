@@ -28,13 +28,17 @@ jobs:
           ruby-version: '3.3'
           bundler-cache: true
 
+      - name: Use GitHub Actions for Pages
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh api --method PUT "repos/${GITHUB_REPOSITORY}/pages" -f build_type=workflow
+
       - name: Build site
         run: bundle exec jekyll build --baseurl "/LJT-Homepage"
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
-        with:
-          enablement: true
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

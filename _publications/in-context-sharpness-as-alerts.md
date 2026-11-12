@@ -4,7 +4,7 @@ collection: publications
 permalink: /publication/in-context-sharpness-as-alerts/
 date: 2024
 venue: 'ICML 2024'
-citation: 'Shiqi Chen, Miao Xiong, **Junteng Liu**, Zhengxuan Wu, Teng Xiao, Siyang Gao, Junxian He. "In-Context Sharpness as Alerts: An Inner Representation Perspective for Hallucination Mitigation." *ICML 2024*, 2024.'
+citation: 'Shiqi Chen, Miao Xiong, <strong>Junteng Liu</strong>, Zhengxuan Wu, Teng Xiao, Siyang Gao, Junxian He. "In-Context Sharpness as Alerts: An Inner Representation Perspective for Hallucination Mitigation." <em>ICML 2024</em>, 2024.'
 ---
 
 Shiqi Chen, Miao Xiong, **Junteng Liu**, Zhengxuan Wu, Teng Xiao, Siyang Gao, Junxian He.
